@@ -1,8 +1,8 @@
 name: Deploy
 
 permissions:
-  contents: read
-  pages: write
+  contents: write    # allow the workflow (GITHUB_TOKEN) to push the gh-pages branch
+  pages: write       # allow publishing Pages deployments
 
 on:
   push:
@@ -17,8 +17,11 @@ jobs:
       BASE_PATH: '/quad-box/'
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repo (persist credentials for later git push)
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -61,3 +64,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          # publish_branch: gh-pages   # optional: set explicit branch if you want

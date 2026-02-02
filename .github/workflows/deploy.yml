@@ -14,8 +14,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env:
-      # Vite reads process.env.BASE_PATH in your vite.config.js
-      # Use the project site base with leading/trailing slash
       BASE_PATH: '/quad-box/'
 
     steps:

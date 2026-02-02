@@ -65,7 +65,7 @@ const playTrial = async (i) => {
   selectTrial(i)
   presentation.highlight = true
   const audioWait = currentTrial.audio ? makeCancellable(audioPlayer.play(currentTrial.audio)) : Promise.resolve()
-  const presentationWait = delay(Math.min(2000, $gameDisplayInfo.trialTime - 350)).then(() => presentation.highlight = false)
+  const presentationWait = delay(Math.min(2000, $gameDisplayInfo.trialTime - 750)).then(() => presentation.highlight = false)
   const trialWait = delay($gameDisplayInfo.trialTime)
   await Promise.all([audioWait, presentationWait, trialWait])
   detectMissedStimuli()

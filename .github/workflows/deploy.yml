@@ -1,7 +1,6 @@
 name: Deploy
 
 permissions:
-  contents: write    # allow the workflow (GITHUB_TOKEN) to push the gh-pages branch
   pages: write       # allow publishing Pages deployments
 
 on:

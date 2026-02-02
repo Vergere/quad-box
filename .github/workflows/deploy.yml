@@ -1,6 +1,7 @@
 name: Deploy
 
 permissions:
+  contents: write
   pages: write       # allow publishing Pages deployments
 
 on:

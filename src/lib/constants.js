@@ -103,7 +103,6 @@ export const ICONS_B_POOL = [
 export const ICONS_C_POOL = [
   'circle',
   'ellipse',
-  'rect',
   'pentagon',
   'hexagon_pointy',
   'arrow',
@@ -113,9 +112,6 @@ export const ICONS_C_POOL = [
   'hexagram',
   'octagram',
   'chevron',
-  't_shape',
-  'l_shape',
-  'u_shape',
   'x_shape',
   'hourglass',
   'leaf',

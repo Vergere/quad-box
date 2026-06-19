@@ -99,6 +99,8 @@ const getShapeSource = (gameSettings) => {
       return ICONS_A_POOL
     case 'iconsB':
       return ICONS_B_POOL
+    case 'iconsC':
+      return ICONS_C_POOL
     case 'all':
       return ALL_SHAPES_POOL
   }

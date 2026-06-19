@@ -76,6 +76,7 @@
     ['tetris', 'Tetris'],
     ['iconsA', 'Icons A'],
     ['iconsB', 'Icons B'],
+    ['iconsC', 'Icons C'],
     ['all', 'All Shapes'],
   ])
   const colorOptions = new Map([

@@ -100,7 +100,31 @@ export const ICONS_B_POOL = [
   'big_planet',
 ]
 
-export const ALL_SHAPES_POOL = [ ...SHAPE_POOL, ...TETRIS_POOL, ...ICONS_A_POOL, ...ICONS_B_POOL ]
+export const ICONS_C_POOL = [
+  'circle',
+  'ellipse',
+  'rect',
+  'pentagon',
+  'hexagon_pointy',
+  'arrow',
+  'trapezoid',
+  'teardrop',
+  'shield',
+  'hexagram',
+  'octagram',
+  'chevron',
+  't_shape',
+  'l_shape',
+  'u_shape',
+  'x_shape',
+  'hourglass',
+  'leaf',
+  'gear',
+  'paintbrush',
+  'magnify',
+]
+
+export const ALL_SHAPES_POOL = [ ...SHAPE_POOL, ...TETRIS_POOL, ...ICONS_A_POOL, ...ICONS_B_POOL, ...ICONS_C_POOL ]
 
 export const LIGHT_PALETTE = {
   red: '#FF2233',

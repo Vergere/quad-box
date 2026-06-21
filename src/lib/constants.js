@@ -112,7 +112,6 @@ export const ICONS_C_POOL = [
   'octagram',
   'chevron',
   'x_shape',
-  'hourglass',
   'gear',
   'paintbrush',
   'magnify',

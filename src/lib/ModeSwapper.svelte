@@ -6,7 +6,7 @@
   $: mode = $settings.mode
 
   const formatMode = (mode) => {
-    return (mode === 'custom' ? 'custom a' : (mode === 'customB' ? 'custom b' : mode)).toUpperCase()
+    return (mode === 'custom' ? 'custom a' : (mode === 'customB' ? 'custom b' : (mode === 'customC' ? 'custom c' : mode))).toUpperCase()
   }
   let showModeDropdown = false
   let showTallyExplanation = false
@@ -16,6 +16,7 @@
     ['dual', 'bg-cyan-800'],
     ['custom', 'bg-orange-800'],
     ['customB', 'bg-yellow-700'],
+    ['customC', 'bg-purple-900'],
     ['tally', 'bg-indigo-800'],
     ['vtally', 'bg-emerald-800'],
   ])
@@ -25,6 +26,7 @@
     ['dual', 'bg-cyan-400'],
     ['custom', 'bg-orange-400'],
     ['customB', 'bg-yellow-400'],
+    ['customC', 'bg-purple-400'],
     ['tally', 'bg-indigo-400'],
     ['vtally', 'bg-emerald-400'],
   ])
@@ -131,7 +133,7 @@
     <h2 class="text-xl font-bold mb-4">Tally Modes</h2>
     <div class="prose text-sm flex flex-col gap-2 ml-4">
       <p>Tally mode changes how matches are handled. Instead of pressing a hotkey for every stimulus that matches during a trial, you enter the <italic>count</italic> of how many stimuli matched.</p>
-      <p>Because only one input is needed per trial, there’s no fixed trial timer. The game advances when you enter a number, and will be as fast as you're able to keep up.</p>
+      <p>Because only one input is needed per trial, there's no fixed trial timer. The game advances when you enter a number, and will be as fast as you're able to keep up.</p>
     </div>
     <div class="flex justify-end w-full"><button class="btn btn-primary mt-4" on:click={() => showTallyExplanation = false}>Close</button></div>
   </div>

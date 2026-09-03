@@ -203,7 +203,6 @@ export const ICONS_C_POOL = [
   'zodiac_pisces',
   'astro_sun',
   'math_plus',
-  'math_minus',
   'math_multiply',
   'math_divide',
   'math_equals',

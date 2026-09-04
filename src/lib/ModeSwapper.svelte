@@ -6,7 +6,7 @@
   $: mode = $settings.mode
 
   const formatMode = (mode) => {
-    return (mode === 'custom' ? 'custom a' : (mode === 'customB' ? 'custom b' : (mode === 'customC' ? 'custom c' : mode))).toUpperCase()
+    return (mode === 'custom' ? 'custom a' : (mode === 'customB' ? 'custom b' : (mode === 'customC' ? 'custom c' : (mode === 'customD' ? 'custom d' : mode)))).toUpperCase()
   }
   let showModeDropdown = false
   let showTallyExplanation = false
@@ -17,6 +17,7 @@
     ['custom', 'bg-orange-800'],
     ['customB', 'bg-yellow-700'],
     ['customC', 'bg-purple-900'],
+    ['customD', 'bg-pink-900'],
     ['tally', 'bg-indigo-800'],
     ['vtally', 'bg-emerald-800'],
   ])
@@ -27,6 +28,7 @@
     ['custom', 'bg-orange-400'],
     ['customB', 'bg-yellow-400'],
     ['customC', 'bg-purple-400'],
+    ['customD', 'bg-pink-400'],
     ['tally', 'bg-indigo-400'],
     ['vtally', 'bg-emerald-400'],
   ])

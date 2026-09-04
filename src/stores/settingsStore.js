@@ -93,6 +93,23 @@ const defaultSettings = {
       shapeSource: 'basic',
       imageSource: 'voronoi',
     },
+    customD: {
+      nBack: 2,
+      numTrials: 40,
+      trialTime: 2500,
+      matchChance: 25,
+      interference: 20,
+      enableAudio: true,
+      enableShape: true,
+      enableColor: false,
+      enableImage: false,
+      grid: 'rotate3D',
+      rules: 'none',
+      audioSource: 'letters2',
+      colorSource: 'basic',
+      shapeSource: 'basic',
+      imageSource: 'voronoi',
+    },
     tally: {
       nBack: 2,
       numTrials: 60,
@@ -144,7 +161,7 @@ const defaultSettings = {
     'shape': 'J',
     'audio': 'L',
   },
-  enabledModes: ['quad', 'dual', 'custom', 'customC'],
+  enabledModes: ['quad', 'dual', 'custom', 'customC', 'customD'],
 }
 
 const getDefaultSettings = () => structuredClone(defaultSettings)

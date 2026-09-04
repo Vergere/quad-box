@@ -6,7 +6,7 @@ export const migrateToV3 = (settings) => {
   settings.version = 'v3'
 
   if (!settings.enabledModes) {
-    settings.enabledModes = ['quad', 'dual', 'custom', 'customB', 'customC']
+    settings.enabledModes = ['quad', 'dual', 'custom', 'customB', 'customC', 'customD']
     if (settings.enableTallyBeta) {
       settings.enabledModes.push('tally')
     }
